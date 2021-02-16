@@ -37,7 +37,7 @@ The following pages/urls are already built into our app:
    click count
 1. `GET /:url`: Redirects from a short URL to the original URL and should also
    track the click event
-1. `GET /:url/stats`: Shows the metrics associated to the short URL
+1. `GET /urls/:url`: Shows the metrics associated to the short URL
 
 # API - Optional Bonus Points
 We would like to have a way to retrieve the last 10 URLs created using an API
