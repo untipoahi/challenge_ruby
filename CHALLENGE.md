@@ -30,6 +30,15 @@ functionality.
 - It MUST be unique
 - `short_url` attribute should store only the generated code
 
+# Recommendations
+
+1. Check routes defined in `config/routes.rb`
+1. Check controller actions in `app/controllers/urls_controller.rb`
+1. Check views in `app/views/urls/`
+1. Google Charts is already added to display charts, you can use any library
+1. Use the [`browser` gem](https://github.com/fnando/browser) already installed
+   to extract information about each click tracked
+
 # Pages
 The following pages/urls are already built into our app:
 
@@ -73,6 +82,6 @@ the API:
 ```
 
 # Accomplishment
-- Completed functionality 70%
+- Completed functionality 65%
 - Completed test 20%
-- Completed bonus 10%
+- Completed bonus 15%
