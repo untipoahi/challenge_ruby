@@ -2,11 +2,12 @@
 
 class UrlsController < ApplicationController
   def index
+    # recent 10 short urls
     @url = Url.new
     @urls = [
-      Url.new(short_url: '123', original_url: 'http://google.com', created_at: Time.now),
-      Url.new(short_url: '456', original_url: 'http://facebook.com', created_at: Time.now),
-      Url.new(short_url: '789', original_url: 'http://yahoo.com', created_at: Time.now)
+      Url.new(short_url: 'ABCDE', original_url: 'http://google.com', created_at: Time.now),
+      Url.new(short_url: 'ABCDG', original_url: 'http://facebook.com', created_at: Time.now),
+      Url.new(short_url: 'ABCDF', original_url: 'http://yahoo.com', created_at: Time.now)
     ]
   end
 
@@ -15,7 +16,7 @@ class UrlsController < ApplicationController
   end
 
   def show
-    @url = Url.new(short_url: '123', original_url: 'http://google.com', created_at: Time.now)
+    @url = Url.new(short_url: 'ABCDE', original_url: 'http://google.com', created_at: Time.now)
     # implement queries
     @daily_clicks = [
       ['1', 13],
@@ -44,7 +45,6 @@ class UrlsController < ApplicationController
   end
 
   def visit
-    # params[:url]
-    # @url = find url
+    # params[:short_url]
   end
 end
