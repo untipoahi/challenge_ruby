@@ -25,5 +25,13 @@ $ brew install postgresql
 $ bin/setup
 ```
 
+5. Start the server
+```sh
+$ bin/rails server
+```
+
+6. Open your browser
+[http://localhost:3000](http://localhost:3000/)
+
 ## Challenge
 See [CHALLENGE.md](./CHALLENGE.md)
