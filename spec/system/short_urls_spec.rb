@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Short Urls", type: :system do
+RSpec.describe 'Short Urls', type: :system do
   before do
     driven_by :selenium
   end
