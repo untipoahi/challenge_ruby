@@ -32,10 +32,11 @@ functionality.
 
 # Recommendations
 
-1. Check routes defined in `config/routes.rb`
-1. Check controller actions in `app/controllers/urls_controller.rb`
-1. Check views in `app/views/urls/`
-1. Google Charts is already added to display charts, you can use any library
+1. Check routes defined in [`config/routes.rb`](./config/routes.rb)
+1. Check controller actions in [`app/controllers/urls_controller.rb`](./app/controllers/urls_controller.rb)
+1. Check views in [`app/views/urls/`](./app/views/urls)
+1. Check existing tests in the [`spec` folder](./spec)
+1. Google Charts is already added to display charts but you can use any library
 1. Use the [`browser` gem](https://github.com/fnando/browser) already installed
    to extract information about each click tracked
 
@@ -66,18 +67,26 @@ the API:
         "clicks": 2
       },
       "relationships": {
-        "metrics": {
+        "clicks": {
           "data": [
             {
               "id": 1,
-              "type": "metrics"
+              "type": "clicks"
             }
           ]
         }
       }
     }
   ],
-  "included": []
+  "included": [
+    {
+      "type": "clicks",
+      "id": 1,
+      "attributes": {
+        ...
+      }
+    }
+  ]
 }
 ```
 
