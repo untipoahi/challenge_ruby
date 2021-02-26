@@ -14,23 +14,32 @@ section before starting the challenge.
 $ rvm install 2.6.6
 ```
 
-3. Install PostgreSQL >9.4
+3. Install PostgreSQL >9.4 and start it
 
 ```sh
 $ brew install postgresql
 ```
 
 4. Run setup
+
 ```sh
 $ bin/setup
 ```
 
-5. Start the server
+6. Run specs
+
+```sh
+$ bin/rspec
+```
+
+7. Start the server
+
 ```sh
 $ bin/rails server
 ```
 
-6. Open your browser
+8. Open your browser
+
 [http://localhost:3000](http://localhost:3000/)
 
 ## Challenge

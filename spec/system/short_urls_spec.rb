@@ -1,8 +1,9 @@
 require 'rails_helper'
+require 'webdrivers'
 
 RSpec.describe 'Short Urls', type: :system do
   before do
-    driven_by :selenium
+    driven_by :selenium, using: :chrome
   end
 
   it 'shows a list of short urls' do
