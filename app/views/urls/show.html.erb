@@ -58,7 +58,9 @@
     var chart = new google.visualization.AreaChart(
       document.getElementById('total-clicks-chart')
     );
-    chart.draw(data, options);
+    
+    if(<%= @daily_clicks.length > 0 %>)
+      chart.draw(data, options);
   }
 
   function drawBrowsersChart() {

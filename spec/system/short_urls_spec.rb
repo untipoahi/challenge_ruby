@@ -3,7 +3,7 @@ require 'webdrivers'
 
 RSpec.describe 'Short Urls', type: :system do
   before do
-    driven_by :selenium, using: :chrome
+    driven_by :selenium, using: :headless_firefox
   end
 
   it 'shows a list of short urls' do
@@ -43,3 +43,5 @@ RSpec.describe 'Short Urls', type: :system do
     end
   end
 end
+
+# I checked that all theee tests are not finished

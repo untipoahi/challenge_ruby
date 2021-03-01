@@ -2,6 +2,7 @@
 
 Rails.application.routes.draw do
   get 'errors/show'
+  get 'api/clicks', to: 'api#index'
   root to: 'urls#index'
 
   resources :urls, only: %i[index create show], param: :url
